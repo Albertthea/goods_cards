@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    /* linear-gradient(90deg, rgba(255,163,240,.7) 0%, rgba(255,36,72,.7) 35%); */
+}
+
+.item-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-information {
+    width: 45%;
+    flex-basis: 50%;
+}
+
+.card-information_picture {
+    width: 200px;
+    height: 200px;
+    margin: 5% 25%;
+}
+
+.card-information_title {
+    margin: 2% 20%;
+    color: #FF2448;
+}
+
+.card-information_description {
+    color: #ccc;
+    font-size: .8em;
+    margin: 0 10%;
+}
+
+.card-information_price {
+    font-weight: bold;
+    color: black;
+    margin-left: 10%;
+}
+
+.card-information_rating {
+    margin-left: 10%;
+}
