@@ -1,5 +1,6 @@
 let jewerlyCardTemplate = document.querySelector('#jewerly-card');  
 let itemBox = document.querySelector('.item-box');
+let errorTempl = document.querySelector('#errors-template');
 
 fetch('http://fakestoreapi.com/products/category/jewelery')
   .then(response => response.json())
@@ -23,5 +24,9 @@ fetch('http://fakestoreapi.com/products/category/jewelery')
       
     }
     console.log(data);
+  })
+  .catch(() => {
+    let newErr = errorTempl.content.cloneNode(true);
+    itemBox.appendChild(newErr);
   }) 
   
