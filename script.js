@@ -29,7 +29,7 @@ async function getJewerlyInf() {
     itemBox.appendChild(newErr);
   }
 }
-
+getJewerlyInf();
 
 
 // fetch('http://fakestoreapi.com/products/category/jewelery')
